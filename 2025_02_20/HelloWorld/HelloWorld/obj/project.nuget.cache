@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "version": 2,
   "dgSpecHash": "7SD63CqPwjk=",
@@ -5,4 +6,13 @@
   "projectFilePath": "C:\\Users\\w401\\Desktop\\133_2_C_Sharp\\2025_02_20\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
   "expectedPackageFiles": [],
   "logs": []
+=======
+{
+  "version": 2,
+  "dgSpecHash": "7SD63CqPwjk=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\w401\\Desktop\\133_2_C_Sharp\\2025_02_20\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
+  "expectedPackageFiles": [],
+  "logs": []
+>>>>>>> b71bcdfbd8b919633aa7932e8f3a94c9ca156d3a
 }
