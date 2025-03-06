@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "version": 2,
   "dgSpecHash": "/MpxdGwj65w=",
@@ -5,4 +6,13 @@
   "projectFilePath": "C:\\Users\\User\\Desktop\\113_2_C_Sharp\\2025_02_27\\Tutorial_4_4\\Tutorial_4_4\\Tutorial_4_4.csproj",
   "expectedPackageFiles": [],
   "logs": []
+=======
+{
+  "version": 2,
+  "dgSpecHash": "eq1yNgb8yDM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\User\\Desktop\\133_2_C_Sharp\\2025_02_27\\Tutorial_4_4\\Tutorial_4_4\\Tutorial_4_4.csproj",
+  "expectedPackageFiles": [],
+  "logs": []
+>>>>>>> 19059f5c1b04ce2b553f1d3cdd9ab49cceac9bdb
 }
