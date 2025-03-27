@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\113_2_C_Sharp\\2025_03_20\\Display Elements\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0CFB1287-30DA-4FD4-955D-42B3AC14AB04}|Display Elements\\Display Elements.csproj|c:\\users\\user\\desktop\\113_2_c_sharp\\2025_03_20\\display elements\\display elements\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0CFB1287-30DA-4FD4-955D-42B3AC14AB04}|Display Elements\\Display Elements.csproj|solutionrelative:display elements\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CFB1287-30DA-4FD4-955D-42B3AC14AB04}|Display Elements\\Display Elements.csproj|C:\\Users\\User\\Desktop\\113_2_C_Sharp\\2025_03_20\\Display Elements\\display elements\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0CFB1287-30DA-4FD4-955D-42B3AC14AB04}|Display Elements\\Display Elements.csproj|c:\\users\\user\\desktop\\113_2_c_sharp\\2025_03_20\\display elements\\display elements\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0CFB1287-30DA-4FD4-955D-42B3AC14AB04}|Display Elements\\Display Elements.csproj|solutionrelative:display elements\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0CFB1287-30DA-4FD4-955D-42B3AC14AB04}|Display Elements\\Display Elements.csproj|C:\\Users\\User\\Desktop\\113_2_C_Sharp\\2025_03_20\\Display Elements\\display elements\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0CFB1287-30DA-4FD4-955D-42B3AC14AB04}|Display Elements\\Display Elements.csproj|solutionrelative:display elements\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CFB1287-30DA-4FD4-955D-42B3AC14AB04}|Display Elements\\Display Elements.csproj|C:\\Users\\User\\Desktop\\113_2_C_Sharp\\2025_03_20\\Display Elements\\display elements\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0CFB1287-30DA-4FD4-955D-42B3AC14AB04}|Display Elements\\Display Elements.csproj|solutionrelative:display elements\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,20 +30,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\113_2_C_Sharp\\2025_03_20\\Display Elements\\Display Elements\\Form1.cs",
               "RelativeDocumentMoniker": "Display Elements\\Form1.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\113_2_C_Sharp\\2025_03_20\\Display Elements\\Display Elements\\Form1.cs",
               "RelativeToolTip": "Display Elements\\Form1.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAYwCkAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwA8AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-20T04:35:04.021Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\113_2_C_Sharp\\2025_03_20\\Display Elements\\Display Elements\\Program.cs",
               "RelativeDocumentMoniker": "Display Elements\\Program.cs",
@@ -51,11 +51,12 @@
               "RelativeToolTip": "Display Elements\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T04:34:07.609Z"
+              "WhenOpened": "2025-03-20T04:34:07.609Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [\u8A2D\u8A08]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\113_2_C_Sharp\\2025_03_20\\Display Elements\\Display Elements\\Form1.cs",
               "RelativeDocumentMoniker": "Display Elements\\Form1.cs",

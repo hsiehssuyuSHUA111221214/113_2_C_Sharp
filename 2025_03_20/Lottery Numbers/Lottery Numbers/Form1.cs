@@ -13,39 +13,36 @@ namespace Lottery_Numbers
     {
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent(); // 初始化表單元件
         }
 
+        // 當使用者按下生成按鈕時觸發的事件處理程式
         private void generateButton_Click(object sender, EventArgs e)
         {
-            const int SIZE = 5; //陣列的大小
-            int[] lotteryNumbers = new int[SIZE]; //儲存樂透號碼陣列
-            Random rand = new Random();
+            const int SIZE = 5; // 陣列的大小，表示要生成的樂透號碼數量
+            int[] lotteryNumbers = new int[SIZE]; // 儲存樂透號碼的陣列
+            Random rand = new Random(); // 創建一個隨機數生成器
 
+            // 迴圈生成樂透號碼
             for (int i = 0; i < lotteryNumbers.Length; i++)
             {
-                lotteryNumbers[i] = rand.Next(1, 43); //產生1~42的亂數
+                lotteryNumbers[i] = rand.Next(1, 43); // 產生 1 到 42 的亂數，並存入陣列
             }
 
-            //firstLabel.Text = lotteryNumbers[0].ToString();
-            //secondLabel.Text = lotteryNumbers[1].ToString();
-            //thirdLabel.Text = lotteryNumbers[2].ToString();
-            //fourthLabel.Text = lotteryNumbers[3].ToString();
-            //fifthLabel.Text = lotteryNumbers[4].ToString();
-
-
-            //使用迴圈顯示樂透號碼
-            Label[] showlabels = { firstLabel, secondLabel, thirdLabel, fourthLabel, fifthLabel };
+            // 使用迴圈顯示樂透號碼
+            Label[] showlabels = { firstLabel, secondLabel, thirdLabel, fourthLabel, fifthLabel }; // 標籤陣列，用於顯示樂透號碼
             for (int i = 0; i < showlabels.Length; i++)
             {
-                showlabels[i].Text = lotteryNumbers[i].ToString();
+                showlabels[i].Text = lotteryNumbers[i].ToString(); // 將樂透號碼轉換為字串並顯示在對應的標籤上
             }
         }
 
+        // 當使用者按下退出按鈕時觸發的事件處理程式
         private void exitButton_Click(object sender, EventArgs e)
         {
-            //關閉表單
-            this.Close();
+            this.Close(); // 關閉表單
         }
     }
 }
+
+

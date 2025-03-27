@@ -38,39 +38,44 @@
             // 
             // name1TextBox
             // 
-            this.name1TextBox.Location = new System.Drawing.Point(14, 41);
+            this.name1TextBox.Location = new System.Drawing.Point(13, 47);
+            this.name1TextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.name1TextBox.Name = "name1TextBox";
-            this.name1TextBox.Size = new System.Drawing.Size(100, 20);
+            this.name1TextBox.Size = new System.Drawing.Size(132, 25);
             this.name1TextBox.TabIndex = 0;
             // 
             // name2TextBox
             // 
-            this.name2TextBox.Location = new System.Drawing.Point(120, 41);
+            this.name2TextBox.Location = new System.Drawing.Point(164, 47);
+            this.name2TextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.name2TextBox.Name = "name2TextBox";
-            this.name2TextBox.Size = new System.Drawing.Size(100, 20);
+            this.name2TextBox.Size = new System.Drawing.Size(132, 25);
             this.name2TextBox.TabIndex = 1;
             // 
             // name3TextBox
             // 
-            this.name3TextBox.Location = new System.Drawing.Point(226, 41);
+            this.name3TextBox.Location = new System.Drawing.Point(301, 47);
+            this.name3TextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.name3TextBox.Name = "name3TextBox";
-            this.name3TextBox.Size = new System.Drawing.Size(100, 20);
+            this.name3TextBox.Size = new System.Drawing.Size(132, 25);
             this.name3TextBox.TabIndex = 2;
             // 
             // promptLabel
             // 
             this.promptLabel.AutoSize = true;
-            this.promptLabel.Location = new System.Drawing.Point(121, 13);
+            this.promptLabel.Location = new System.Drawing.Point(161, 15);
+            this.promptLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.promptLabel.Name = "promptLabel";
-            this.promptLabel.Size = new System.Drawing.Size(99, 13);
+            this.promptLabel.Size = new System.Drawing.Size(117, 15);
             this.promptLabel.TabIndex = 3;
             this.promptLabel.Text = "Enter Three Names";
             // 
             // getNamesButton
             // 
-            this.getNamesButton.Location = new System.Drawing.Point(92, 85);
+            this.getNamesButton.Location = new System.Drawing.Point(123, 98);
+            this.getNamesButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.getNamesButton.Name = "getNamesButton";
-            this.getNamesButton.Size = new System.Drawing.Size(75, 23);
+            this.getNamesButton.Size = new System.Drawing.Size(100, 27);
             this.getNamesButton.TabIndex = 4;
             this.getNamesButton.Text = "Get Names";
             this.getNamesButton.UseVisualStyleBackColor = true;
@@ -78,9 +83,10 @@
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(173, 85);
+            this.exitButton.Location = new System.Drawing.Point(231, 98);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(75, 23);
+            this.exitButton.Size = new System.Drawing.Size(100, 27);
             this.exitButton.TabIndex = 5;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = true;
@@ -88,15 +94,16 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(341, 133);
+            this.ClientSize = new System.Drawing.Size(455, 153);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.getNamesButton);
             this.Controls.Add(this.promptLabel);
             this.Controls.Add(this.name3TextBox);
             this.Controls.Add(this.name2TextBox);
             this.Controls.Add(this.name1TextBox);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Form1";
             this.Text = "Display Elements";
             this.ResumeLayout(false);

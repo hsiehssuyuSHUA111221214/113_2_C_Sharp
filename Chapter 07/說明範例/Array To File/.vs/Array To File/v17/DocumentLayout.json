@@ -1,0 +1,116 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\113_2_C_Sharp\\Chapter 07\\\u8AAA\u660E\u7BC4\u4F8B\\Array To File\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EF446894-6692-42EF-8CB1-ED52E42267DC}|Array To File\\Array To File.csproj|c:\\users\\user\\desktop\\113_2_c_sharp\\chapter 07\\\u8AAA\u660E\u7BC4\u4F8B\\array to file\\array to file\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF446894-6692-42EF-8CB1-ED52E42267DC}|Array To File\\Array To File.csproj|solutionrelative:array to file\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF446894-6692-42EF-8CB1-ED52E42267DC}|Array To File\\Array To File.csproj|c:\\users\\user\\desktop\\113_2_c_sharp\\chapter 07\\\u8AAA\u660E\u7BC4\u4F8B\\array to file\\array to file\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EF446894-6692-42EF-8CB1-ED52E42267DC}|Array To File\\Array To File.csproj|solutionrelative:array to file\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF446894-6692-42EF-8CB1-ED52E42267DC}|Array To File\\Array To File.csproj|c:\\users\\user\\desktop\\113_2_c_sharp\\chapter 07\\\u8AAA\u660E\u7BC4\u4F8B\\array to file\\array to file\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF446894-6692-42EF-8CB1-ED52E42267DC}|Array To File\\Array To File.csproj|solutionrelative:array to file\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF446894-6692-42EF-8CB1-ED52E42267DC}|Array To File\\Array To File.csproj|c:\\users\\user\\desktop\\113_2_c_sharp\\chapter 07\\\u8AAA\u660E\u7BC4\u4F8B\\array to file\\array to file\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF446894-6692-42EF-8CB1-ED52E42267DC}|Array To File\\Array To File.csproj|solutionrelative:array to file\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\113_2_C_Sharp\\Chapter 07\\\u8AAA\u660E\u7BC4\u4F8B\\Array To File\\Array To File\\Form1.cs",
+              "RelativeDocumentMoniker": "Array To File\\Form1.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\113_2_C_Sharp\\Chapter 07\\\u8AAA\u660E\u7BC4\u4F8B\\Array To File\\Array To File\\Form1.cs",
+              "RelativeToolTip": "Array To File\\Form1.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAUwCEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T03:10:38.223Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\113_2_C_Sharp\\Chapter 07\\\u8AAA\u660E\u7BC4\u4F8B\\Array To File\\Array To File\\Form1.cs",
+              "RelativeDocumentMoniker": "Array To File\\Form1.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\113_2_C_Sharp\\Chapter 07\\\u8AAA\u660E\u7BC4\u4F8B\\Array To File\\Array To File\\Form1.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "Array To File\\Form1.cs [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T03:10:07.238Z",
+              "EditorCaption": " [\u8A2D\u8A08]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\113_2_C_Sharp\\Chapter 07\\\u8AAA\u660E\u7BC4\u4F8B\\Array To File\\Array To File\\Program.cs",
+              "RelativeDocumentMoniker": "Array To File\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\113_2_C_Sharp\\Chapter 07\\\u8AAA\u660E\u7BC4\u4F8B\\Array To File\\Array To File\\Program.cs",
+              "RelativeToolTip": "Array To File\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T03:09:58.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\113_2_C_Sharp\\Chapter 07\\\u8AAA\u660E\u7BC4\u4F8B\\Array To File\\Array To File\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Array To File\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\113_2_C_Sharp\\Chapter 07\\\u8AAA\u660E\u7BC4\u4F8B\\Array To File\\Array To File\\Form1.Designer.cs",
+              "RelativeToolTip": "Array To File\\Form1.Designer.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAawEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T03:09:55.468Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 229,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 88,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
