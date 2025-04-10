@@ -21,30 +21,30 @@ namespace Array_To_File
         {
             try
             {
-                // Create an array with some values.
+                // 建立一個包含數值的整數陣列。
                 int[] numbers = { 10, 20, 30, 40, 50 };
 
-                // Declare a StreamWriter variable.
+                // 宣告一個 StreamWriter 變數，用於寫入檔案。
                 StreamWriter outputFile;
 
-                // Create the file and get a StreamWriter object.
+                // 建立檔案並取得 StreamWriter 物件。
                 outputFile = File.CreateText("Values.txt");
 
-                // Write the array's contents to the file.
+                // 將陣列的內容逐一寫入檔案中。
                 for (int index = 0; index < numbers.Length; index++)
                 {
                     outputFile.WriteLine(numbers[index]);
                 }
 
-                // Close the file.
+                // 關閉檔案以釋放資源。
                 outputFile.Close();
 
-                // Let the user know it's done.
-                MessageBox.Show("Done");
+                // 顯示訊息通知使用者操作已完成。
+                MessageBox.Show("完成");
             }
             catch (Exception ex)
             {
-                // Display an error message.
+                // 顯示錯誤訊息，通知使用者發生的例外狀況。
                 MessageBox.Show(ex.Message);
             }
         }
