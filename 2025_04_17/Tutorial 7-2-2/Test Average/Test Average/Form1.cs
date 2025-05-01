@@ -13,22 +13,26 @@ namespace Test_Average
 {
     public partial class Form1 : Form
     {
+        // 宣告一個類級別的變量，用于存儲所有測試分數
+        private List<int> testScores = new List<int>();
+
         public Form1()
         {
             InitializeComponent();
+
+            // 確保排序按鈕的Click事件連接到正確的方法
+            sortButton.Click += new EventHandler(sortButton_Click);
+
+            // 添加刪除按鈕的Click事件
+            deleteButton.Click += new EventHandler(deleteButton_Click);
         }
 
-        // Average 方法接受一個整數清單作為參數，
-        // 並計算該清單中所有值的平均值，然後返回結果。
         private double Average(List<int> numbers)
         {
-            // 確保清單不為空，避免例外發生。
             if (numbers == null || numbers.Count == 0)
             {
                 throw new ArgumentException("清單不能為空。");
             }
-
-            // 使用 numbers 清單累加所有分數計算總和，再除以清單長度求平均值。
             double sum = 0;
             foreach (int score in numbers)
             {
@@ -37,8 +41,6 @@ namespace Test_Average
             return sum / numbers.Count;
         }
 
-        // Highest 方法接受一個整數清單作為參數，
-        // 並找出該清單中的最大值，然後返回該值。
         private int Highest(List<int> numbers)
         {
             if (numbers == null || numbers.Count == 0)
@@ -48,8 +50,6 @@ namespace Test_Average
             return numbers.Max();
         }
 
-        // Lowest 方法接受一個整數清單作為參數，
-        // 並找出該清單中的最小值，然後返回該值。
         private int Lowest(List<int> numbers)
         {
             if (numbers == null || numbers.Count == 0)
@@ -61,11 +61,11 @@ namespace Test_Average
 
         private void getScoresButton_Click(object sender, EventArgs e)
         {
-            List<int> testScores = new List<int>(); // 用於存儲測試分數的整數清單。
-            int highScore = 0; // 用於存儲最高分數的變數。
-            int lowScore = 0; // 用於存儲最低分數的變數。
-            double averageScore = 0.0; // 用於存儲平均分數的變數。
-            StreamReader inputFile; // 用於讀取檔案的 StreamReader 物件。
+            testScores = new List<int>(); // 重置測試分數列表
+            int highScore = 0;
+            int lowScore = 0;
+            double averageScore = 0.0;
+            StreamReader inputFile;
 
             try
             {
@@ -73,9 +73,9 @@ namespace Test_Average
                 {
                     // 開啟選擇的檔案
                     inputFile = File.OpenText(openFile.FileName);
-
                     // 清空 ListBox 以顯示新的成績
                     testScoresListBox.Items.Clear();
+                    sortedScoresListBox.Items.Clear(); // 同時清空排序後的ListBox
 
                     // 從檔案中逐行讀取測試分數，直到檔案結束
                     while (!inputFile.EndOfStream)
@@ -106,9 +106,115 @@ namespace Test_Average
             }
         }
 
+        private void sortButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // 確保有數據可以排序
+                if (testScores == null || testScores.Count == 0)
+                {
+                    MessageBox.Show("成績清單為空，請先讀取成績數據！");
+                    return;
+                }
+
+                // 創建一個新的排序列表
+                List<int> sortedScores = new List<int>(testScores);
+                sortedScores.Sort();
+                sortedScores.Reverse(); // 從高到低排序
+
+                // 更新排序後的ListBox
+                sortedScoresListBox.Items.Clear();
+                foreach (int score in sortedScores)
+                {
+                    sortedScoresListBox.Items.Add(score);
+                }
+
+                // 顯示提示訊息，確認排序完成
+                MessageBox.Show("成績已從高到低排序完成！");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("排序時發生錯誤：" + ex.Message);
+            }
+        }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int selectedScore;
+                bool fromSortedList = false;
+
+                // 檢查哪個列表有選中項
+                if (sortedScoresListBox.SelectedIndex != -1)
+                {
+                    // 從排序列表中刪除
+                    selectedScore = Convert.ToInt32(sortedScoresListBox.SelectedItem);
+                    fromSortedList = true;
+                }
+                else if (testScoresListBox.SelectedIndex != -1)
+                {
+                    // 從原始列表中刪除
+                    selectedScore = Convert.ToInt32(testScoresListBox.SelectedItem);
+                }
+                else
+                {
+                    MessageBox.Show("請在左側或右側列表中選擇要刪除的成績！");
+                    return;
+                }
+
+                // 從 testScores 清單中移除該分數
+                testScores.Remove(selectedScore);
+
+                // 更新 testScoresListBox
+                testScoresListBox.Items.Clear();
+                foreach (int score in testScores)
+                {
+                    testScoresListBox.Items.Add(score);
+                }
+
+                // 更新 sortedScoresListBox
+                List<int> sortedScores = new List<int>(testScores);
+                sortedScores.Sort();
+                sortedScores.Reverse(); // 從高到低排序
+                sortedScoresListBox.Items.Clear();
+                foreach (int score in sortedScores)
+                {
+                    sortedScoresListBox.Items.Add(score);
+                }
+
+                // 更新統計數據
+                if (testScores.Count > 0)
+                {
+                    averageScoreLabel.Text = Average(testScores).ToString("n1");
+                    highScoreLabel.Text = Highest(testScores).ToString();
+                    lowScoreLabel.Text = Lowest(testScores).ToString();
+                }
+                else
+                {
+                    averageScoreLabel.Text = string.Empty;
+                    highScoreLabel.Text = string.Empty;
+                    lowScoreLabel.Text = string.Empty;
+                }
+
+                // 顯示刪除成功訊息
+                if (fromSortedList)
+                {
+                    MessageBox.Show($"已從排序列表中刪除分數 {selectedScore}");
+                }
+                else
+                {
+                    MessageBox.Show($"已從原始列表中刪除分數 {selectedScore}");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("刪除時發生錯誤：" + ex.Message);
+            }
+        }
+
         private void exitButton_Click(object sender, EventArgs e)
         {
-            // 關閉目前的表單。
             this.Close();
         }
     }
