@@ -66,13 +66,3 @@ C:\Users\w401\Documents\GitHub\113_2_C_Sharp\2025_04_17\Tutorial 7-2-2\Test Aver
 C:\Users\w401\Documents\GitHub\113_2_C_Sharp\2025_04_17\Tutorial 7-2-2\Test Average\Test Average\bin\Debug\Test Average.exe.config
 C:\Users\w401\Documents\GitHub\113_2_C_Sharp\2025_04_17\Tutorial 7-2-2\Test Average\Test Average\bin\Debug\Test Average.exe
 C:\Users\w401\Documents\GitHub\113_2_C_Sharp\2025_04_17\Tutorial 7-2-2\Test Average\Test Average\bin\Debug\Test Average.pdb
-C:\Users\User\Desktop\113_2_C_Sharp\2025_04_24\Tutorial7-2-3\Test Average\Test Average\bin\Debug\Test Average.exe.config
-C:\Users\User\Desktop\113_2_C_Sharp\2025_04_24\Tutorial7-2-3\Test Average\Test Average\bin\Debug\Test Average.exe
-C:\Users\User\Desktop\113_2_C_Sharp\2025_04_24\Tutorial7-2-3\Test Average\Test Average\bin\Debug\Test Average.pdb
-C:\Users\User\Desktop\113_2_C_Sharp\2025_04_24\Tutorial7-2-3\Test Average\Test Average\obj\x86\Debug\Test Average.csproj.AssemblyReference.cache
-C:\Users\User\Desktop\113_2_C_Sharp\2025_04_24\Tutorial7-2-3\Test Average\Test Average\obj\x86\Debug\Test_Average.Form1.resources
-C:\Users\User\Desktop\113_2_C_Sharp\2025_04_24\Tutorial7-2-3\Test Average\Test Average\obj\x86\Debug\Test_Average.Properties.Resources.resources
-C:\Users\User\Desktop\113_2_C_Sharp\2025_04_24\Tutorial7-2-3\Test Average\Test Average\obj\x86\Debug\Test Average.csproj.GenerateResource.cache
-C:\Users\User\Desktop\113_2_C_Sharp\2025_04_24\Tutorial7-2-3\Test Average\Test Average\obj\x86\Debug\Test Average.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\113_2_C_Sharp\2025_04_24\Tutorial7-2-3\Test Average\Test Average\obj\x86\Debug\Test Average.exe
-C:\Users\User\Desktop\113_2_C_Sharp\2025_04_24\Tutorial7-2-3\Test Average\Test Average\obj\x86\Debug\Test Average.pdb

@@ -23,7 +23,7 @@ namespace Test_Average
             // 確保排序按鈕的Click事件連接到正確的方法
             sortButton.Click += new EventHandler(sortButton_Click);
 
-            // 為刪除按鈕連接Click事件
+            // 添加刪除按鈕的Click事件
             deleteButton.Click += new EventHandler(deleteButton_Click);
         }
 
@@ -142,36 +142,48 @@ namespace Test_Average
         {
             try
             {
-                // 檢查是否選取了某一筆項目
-                int selectedIndex = testScoresListBox.SelectedIndex;
+                int selectedScore;
+                bool fromSortedList = false;
 
-                if (selectedIndex == -1)
+                // 檢查哪個列表有選中項
+                if (sortedScoresListBox.SelectedIndex != -1)
                 {
-                    MessageBox.Show("請先選擇要刪除的成績項目！");
+                    // 從排序列表中刪除
+                    selectedScore = Convert.ToInt32(sortedScoresListBox.SelectedItem);
+                    fromSortedList = true;
+                }
+                else if (testScoresListBox.SelectedIndex != -1)
+                {
+                    // 從原始列表中刪除
+                    selectedScore = Convert.ToInt32(testScoresListBox.SelectedItem);
+                }
+                else
+                {
+                    MessageBox.Show("請在左側或右側列表中選擇要刪除的成績！");
                     return;
                 }
 
-                // 取得被選取的分數
-                int scoreToDelete = (int)testScoresListBox.Items[selectedIndex];
+                // 從 testScores 清單中移除該分數
+                testScores.Remove(selectedScore);
 
-                // 從 testScores List 中找到第一個該分數並刪除（避免 index 錯位）
-                testScores.Remove(scoreToDelete);
+                // 更新 testScoresListBox
+                testScoresListBox.Items.Clear();
+                foreach (int score in testScores)
+                {
+                    testScoresListBox.Items.Add(score);
+                }
 
-                // 從 ListBox 中移除該項目
-                testScoresListBox.Items.RemoveAt(selectedIndex);
-
-                // 更新排序後的 ListBox
+                // 更新 sortedScoresListBox
                 List<int> sortedScores = new List<int>(testScores);
                 sortedScores.Sort();
-                sortedScores.Reverse(); // 高到低排序
-
+                sortedScores.Reverse(); // 從高到低排序
                 sortedScoresListBox.Items.Clear();
                 foreach (int score in sortedScores)
                 {
                     sortedScoresListBox.Items.Add(score);
                 }
 
-                // 更新平均、最高、最低
+                // 更新統計數據
                 if (testScores.Count > 0)
                 {
                     averageScoreLabel.Text = Average(testScores).ToString("n1");
@@ -180,12 +192,20 @@ namespace Test_Average
                 }
                 else
                 {
-                    averageScoreLabel.Text = "";
-                    highScoreLabel.Text = "";
-                    lowScoreLabel.Text = "";
+                    averageScoreLabel.Text = string.Empty;
+                    highScoreLabel.Text = string.Empty;
+                    lowScoreLabel.Text = string.Empty;
                 }
 
-                MessageBox.Show($"成功刪除分數：{scoreToDelete}");
+                // 顯示刪除成功訊息
+                if (fromSortedList)
+                {
+                    MessageBox.Show($"已從排序列表中刪除分數 {selectedScore}");
+                }
+                else
+                {
+                    MessageBox.Show($"已從原始列表中刪除分數 {selectedScore}");
+                }
             }
             catch (Exception ex)
             {
